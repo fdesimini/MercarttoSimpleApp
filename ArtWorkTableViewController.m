@@ -7,12 +7,17 @@
 //
 
 #import "ArtWorkTableViewController.h"
+#import "Artist.h"
 
 @interface ArtWorkTableViewController ()
 
 @end
 
 @implementation ArtWorkTableViewController
+
+{
+   // NSMutableArray *artDetails;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +27,117 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    /*Initialize the artDetails array
+    Artist *artDetails1 = [Artist new];
+    artDetails1.artTitle = @"Large Interior, Los Angeles";
+    artDetails1.artistName = @"David Hockney";
+    artDetails1.artLocation = @"The Metropolitan Museum of Art";
+    artDetails1.artImage = @"image.jpg";
+     
+     Artist *artDetails2 = [Artist new];
+     artDetails2.artTitle = @"North Shore, Lake Superior";
+     artDetails2.artistName = @"Franklin Carmichael";
+     artDetails2.artLocation = @"Art Gallery of Ontario";
+     artDetails2.artImage = @"image.jpg";
+
+     Artist *artDetails3 = [Artist new];
+     artDetails3.artTitle = @"Moonrise Over the Sea|";
+     artDetails3.artistName = @"Caspar David Friedrich";
+     artDetails3.artLocation = @"Alte Nationalgalerie, Staatliche Museen zu Berlin";
+     artDetails3.artImage = @"image.jpg";
+     
+     Artist *artDetails4 = [Artist new];
+     artDetails4.artTitle = @"Parade (Diptych)";
+     artDetails4.artistName = @"Mequitta Ahuja";
+     artDetails4.artLocation = @"Blanton Museum of Art";
+     artDetails4.artImage = @"image.jpg";
+     
+     Artist *artDetails5 = [Artist new];
+     artDetails5.artTitle = @"The Marchesa Casati";
+     artDetails5.artistName = @"Augustus Edwin John";
+     artDetails5.artLocation = @"Art Gallery of Ontario";
+     artDetails5.artImage = @"image.jpg";
+     
+     Artist *artDetails6 = [Artist new];
+     artDetails6.artTitle = @"The Harvest";
+     artDetails6.artistName = @"Albert Oehlen";
+     artDetails6.artLocation = @"Essl Museum - Contemporary Art";
+     artDetails6.artImage = @"image.jpg";
+    
+     Artist *artDetails7 = [Artist new];
+     artDetails7.artTitle = @"The Milkmaid";
+     artDetails7.artistName = @"Johannes Vermeer";
+     artDetails7.artLocation = @"Rijksmuseum";
+     artDetails7.artImage = @"image.jpg";
+     
+     Artist *artDetails8 = [Artist new];
+     artDetails8.artTitle = @"Abstract Painting (726) ";
+     artDetails8.artistName = @"Gerhard Richter";
+     artDetails8.artLocation = @"Tate Modern";
+     artDetails8.artImage = @"image.jpg";
+
+     Artist *artDetails9 = [Artist new];
+     artDetails9.artTitle = @"Gum Ball No. 10: “Sugar Daddy”";
+     artDetails9.artistName = @"Charles Bell";
+     artDetails9.artLocation = @"Solomon R. Guggenheim Museum";
+     artDetails9.artImage = @"image.jpg";
+     
+     Artist *artDetails10 = [Artist new];
+     artDetails10.artTitle = @"Details of Renaissance Paintings (Sandro Botticelli, Birth of Venus, 1482)";
+     artDetails10.artistName = @"Andy Warhol";
+     artDetails10.artLocation = @"The Andy Warhol Museum";
+     artDetails10.artImage = @"image.jpg";
+
+     Artist *artDetails11 = [Artist new];
+     artDetails11.artTitle = @"Apotryptophanae";
+     artDetails11.artistName = @"Damien Hirst";
+     artDetails11.artLocation = @"British Council";
+     artDetails11.artImage = @"image.jpg";
+     
+     Artist *artDetails12 = [Artist new];
+     artDetails12.artTitle = @"Sculptures find their location";
+     artDetails12.artistName = @"Albert Oehlen";
+     artDetails12.artLocation = @"Essl Museum - Contemporary Art";
+     artDetails12.artImage = @"image.jpg";
+     
+     Artist *artDetails13 = [Artist new];
+     artDetails13.artTitle = @"Tc86";
+     artDetails13.artistName = @"Michael Wolf";
+     artDetails13.artLocation = @"Hong Kong Heritage Museum";
+     artDetails13.artImage = @"image.jpg";
+     
+     Artist *artDetails14 = [Artist new];
+     artDetails14.artTitle = @"Music, Pink and Blue No. 2";
+     artDetails14.artistName = @"Georgia O’Keeffe";
+     artDetails14.artLocation = @"Whitney Museum of American Art";
+     artDetails14.artImage = @"image.jpg";
+     
+     Artist *artDetails15 = [Artist new];
+     artDetails15.artTitle = @"Untitled (Julia)";
+     artDetails15.artistName = @"Anna Malagrida";
+     artDetails15.artLocation = @"Fundacion MAPFRE";
+     artDetails15.artImage = @"image.jpg";
+     
+     Artist *artDetails16 = [Artist new];
+     artDetails16.artTitle = @"Schiphol";
+     artDetails16.artistName = @"Andreas Gursky";
+     artDetails16.artLocation = @"The Metropolitan Museum of Art";
+     artDetails16.artImage = @"image.jpg";
+     
+     Artist *artDetails17 = [Artist new];
+     artDetails17.artTitle = @"Blue Reflections";
+     artDetails17.artistName = @"Kazuo Nakamura";
+     artDetails17.artLocation = @"Art Gallery of Ontario";
+     artDetails17.artImage = @"image.jpg";
+     
+     Artist *artDetails18 = [Artist new];
+     artDetails18.artTitle = @"Interior with a Picture";
+     artDetails18.artistName = @"Patrick Caulfield";
+     artDetails18.artLocation = @"Tate";
+     artDetails18.artImage = @"image.jpg";
+     
+    */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,6 +170,8 @@
         cell.textLabel.text = @"WYAP";
         cell.backgroundColor = [UIColor colorWithHue:.09 saturation:.99 brightness:.95 alpha:1.0];
         cell.imageView.image = [UIImage imageNamed:@"launch480x480"];
+        
+        
     
     }
     
