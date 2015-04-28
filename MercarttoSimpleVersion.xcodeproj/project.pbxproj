@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39ABE9C81AED62AB00C729F6 /* ArtWorkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */; };
 		39EFC1E91AEAC45600C7A5E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1E81AEAC45600C7A5E5 /* main.m */; };
 		39EFC1EC1AEAC45600C7A5E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1EB1AEAC45600C7A5E5 /* AppDelegate.m */; };
 		39EFC1EF1AEAC45600C7A5E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */; };
@@ -27,13 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39ABE9C61AED62AB00C729F6 /* ArtWorkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtWorkTableViewController.h; sourceTree = "<group>"; };
+		39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtWorkTableViewController.m; sourceTree = "<group>"; };
 		39EFC1E31AEAC45600C7A5E5 /* MercarttoSimpleVersion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercarttoSimpleVersion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EFC1E71AEAC45600C7A5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39EFC1E81AEAC45600C7A5E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		39EFC1EA1AEAC45600C7A5E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39EFC1EB1AEAC45600C7A5E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		39EFC1ED1AEAC45600C7A5E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39EFC1ED1AEAC45600C7A5E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MercarttoSimpleVersion/ViewController.h; sourceTree = "<group>"; };
+		39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MercarttoSimpleVersion/ViewController.m; sourceTree = "<group>"; };
 		39EFC1F11AEAC45600C7A5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39EFC1F31AEAC45600C7A5E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		39EFC1F61AEAC45600C7A5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 		39EFC1DA1AEAC45600C7A5E5 = {
 			isa = PBXGroup;
 			children = (
+				39EFC23F1AEAD7C500C7A5E5 /* Controller */,
+				39EFC23E1AEAD7B900C7A5E5 /* Model */,
 				39EFC1E51AEAC45600C7A5E5 /* MercarttoSimpleVersion */,
 				39EFC1FF1AEAC45600C7A5E5 /* MercarttoSimpleVersionTests */,
 				39EFC1E41AEAC45600C7A5E5 /* Products */,
@@ -83,8 +88,6 @@
 			children = (
 				39EFC1EA1AEAC45600C7A5E5 /* AppDelegate.h */,
 				39EFC1EB1AEAC45600C7A5E5 /* AppDelegate.m */,
-				39EFC1ED1AEAC45600C7A5E5 /* ViewController.h */,
-				39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */,
 				39EFC1F01AEAC45600C7A5E5 /* Main.storyboard */,
 				39EFC1F31AEAC45600C7A5E5 /* Images.xcassets */,
 				39EFC1F51AEAC45600C7A5E5 /* LaunchScreen.xib */,
@@ -117,6 +120,24 @@
 				39EFC2011AEAC45600C7A5E5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39EFC23E1AEAD7B900C7A5E5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		39EFC23F1AEAD7C500C7A5E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39EFC1ED1AEAC45600C7A5E5 /* ViewController.h */,
+				39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */,
+				39ABE9C61AED62AB00C729F6 /* ArtWorkTableViewController.h */,
+				39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +189,7 @@
 				TargetAttributes = {
 					39EFC1E21AEAC45600C7A5E5 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = J4AHT24399;
 					};
 					39EFC1FB1AEAC45600C7A5E5 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -219,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39ABE9C81AED62AB00C729F6 /* ArtWorkTableViewController.m in Sources */,
 				39EFC1EF1AEAC45600C7A5E5 /* ViewController.m in Sources */,
 				39EFC1EC1AEAC45600C7A5E5 /* AppDelegate.m in Sources */,
 				39EFC1E91AEAC45600C7A5E5 /* main.m in Sources */,
@@ -348,9 +371,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MercarttoSimpleVersion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +385,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MercarttoSimpleVersion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -418,6 +447,7 @@
 				39EFC2081AEAC45600C7A5E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39EFC2091AEAC45600C7A5E5 /* Build configuration list for PBXNativeTarget "MercarttoSimpleVersionTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +456,7 @@
 				39EFC20B1AEAC45600C7A5E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

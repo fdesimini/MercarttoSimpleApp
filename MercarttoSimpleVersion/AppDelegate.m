@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ArtWorkTableViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    ArtWorkTableViewController *artWorkTable = [[ArtWorkTableViewController alloc]initWithStyle:UITableViewStylePlain];//come back to this to play with different styles
+    CGRect viewRect = [[UIScreen mainScreen]bounds];
+    self.window = [[UIWindow alloc]initWithFrame:viewRect];
+    self.window.rootViewController = artWorkTable;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
