@@ -10,4 +10,6 @@
 
 @interface ArtWorkTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSArray *artDetails;
+
 @end

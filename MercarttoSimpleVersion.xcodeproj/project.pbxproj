@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		397473F01AEF20B900C92489 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 397473EF1AEF20B900C92489 /* Artist.m */; };
+		397C78811AF01D4200F17861 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C78801AF01D4200F17861 /* TableViewCell.m */; };
 		39ABE9C81AED62AB00C729F6 /* ArtWorkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */; };
 		39EFC1E91AEAC45600C7A5E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1E81AEAC45600C7A5E5 /* main.m */; };
 		39EFC1EC1AEAC45600C7A5E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1EB1AEAC45600C7A5E5 /* AppDelegate.m */; };
-		39EFC1EF1AEAC45600C7A5E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */; };
 		39EFC1F21AEAC45600C7A5E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39EFC1F01AEAC45600C7A5E5 /* Main.storyboard */; };
 		39EFC1F41AEAC45600C7A5E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39EFC1F31AEAC45600C7A5E5 /* Images.xcassets */; };
 		39EFC1F71AEAC45600C7A5E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39EFC1F51AEAC45600C7A5E5 /* LaunchScreen.xib */; };
@@ -31,6 +31,8 @@
 /* Begin PBXFileReference section */
 		397473EE1AEF20B900C92489 /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		397473EF1AEF20B900C92489 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
+		397C787F1AF01D4200F17861 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		397C78801AF01D4200F17861 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		39ABE9C61AED62AB00C729F6 /* ArtWorkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtWorkTableViewController.h; sourceTree = "<group>"; };
 		39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtWorkTableViewController.m; sourceTree = "<group>"; };
 		39EFC1E31AEAC45600C7A5E5 /* MercarttoSimpleVersion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercarttoSimpleVersion.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,8 +40,6 @@
 		39EFC1E81AEAC45600C7A5E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		39EFC1EA1AEAC45600C7A5E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		39EFC1EB1AEAC45600C7A5E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		39EFC1ED1AEAC45600C7A5E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MercarttoSimpleVersion/ViewController.h; sourceTree = "<group>"; };
-		39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MercarttoSimpleVersion/ViewController.m; sourceTree = "<group>"; };
 		39EFC1F11AEAC45600C7A5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39EFC1F31AEAC45600C7A5E5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		39EFC1F61AEAC45600C7A5E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -66,9 +66,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		397C787E1AF01CD900F17861 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				397C787F1AF01D4200F17861 /* TableViewCell.h */,
+				397C78801AF01D4200F17861 /* TableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		39EFC1DA1AEAC45600C7A5E5 = {
 			isa = PBXGroup;
 			children = (
+				397C787E1AF01CD900F17861 /* View */,
 				39EFC23F1AEAD7C500C7A5E5 /* Controller */,
 				39EFC23E1AEAD7B900C7A5E5 /* Model */,
 				39EFC1E51AEAC45600C7A5E5 /* MercarttoSimpleVersion */,
@@ -128,6 +138,8 @@
 		39EFC23E1AEAD7B900C7A5E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				397473EE1AEF20B900C92489 /* Artist.h */,
+				397473EF1AEF20B900C92489 /* Artist.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -135,12 +147,8 @@
 		39EFC23F1AEAD7C500C7A5E5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				39EFC1ED1AEAC45600C7A5E5 /* ViewController.h */,
-				39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */,
 				39ABE9C61AED62AB00C729F6 /* ArtWorkTableViewController.h */,
 				39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */,
-				397473EE1AEF20B900C92489 /* Artist.h */,
-				397473EF1AEF20B900C92489 /* Artist.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -247,7 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39ABE9C81AED62AB00C729F6 /* ArtWorkTableViewController.m in Sources */,
-				39EFC1EF1AEAC45600C7A5E5 /* ViewController.m in Sources */,
+				397C78811AF01D4200F17861 /* TableViewCell.m in Sources */,
 				39EFC1EC1AEAC45600C7A5E5 /* AppDelegate.m in Sources */,
 				39EFC1E91AEAC45600C7A5E5 /* main.m in Sources */,
 				397473F01AEF20B900C92489 /* Artist.m in Sources */,

@@ -21,8 +21,11 @@
     // Override point for customization after application launch.
     ArtWorkTableViewController *artWorkTable = [[ArtWorkTableViewController alloc]initWithStyle:UITableViewStylePlain];//come back to this to play with different styles
     CGRect viewRect = [[UIScreen mainScreen]bounds];
+    //create the UI window
+    //initialize object (*window) with frame size  to the bounds of the mainScreen
     self.window = [[UIWindow alloc]initWithFrame:viewRect];
     self.window.rootViewController = artWorkTable;
+    //receive all keyboard touch events
     [self.window makeKeyAndVisible];
     
     
