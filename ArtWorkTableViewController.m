@@ -8,6 +8,7 @@
 
 #import "ArtWorkTableViewController.h"
 #import "Artist.h"
+#import "ListOfArtTVCell.h"
 
 @interface ArtWorkTableViewController ()
 
@@ -16,7 +17,7 @@
 @implementation ArtWorkTableViewController
 
 {
-   // NSMutableArray *artDetails;
+   NSArray *artDetails;
 }
 
 - (void)viewDidLoad {
@@ -28,116 +29,117 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    /*Initialize the artDetails array
+    //Initialize the artDetails array
     Artist *artDetails1 = [Artist new];
     artDetails1.artTitle = @"Large Interior, Los Angeles";
     artDetails1.artistName = @"David Hockney";
     artDetails1.artLocation = @"The Metropolitan Museum of Art";
-    artDetails1.artImage = @"image.jpg";
+    artDetails1.artImage = @"David-Hockney.jpg";
      
      Artist *artDetails2 = [Artist new];
      artDetails2.artTitle = @"North Shore, Lake Superior";
      artDetails2.artistName = @"Franklin Carmichael";
      artDetails2.artLocation = @"Art Gallery of Ontario";
-     artDetails2.artImage = @"image.jpg";
+     artDetails2.artImage = @"Franklin-Carmichael.jpg";
 
      Artist *artDetails3 = [Artist new];
      artDetails3.artTitle = @"Moonrise Over the Sea|";
      artDetails3.artistName = @"Caspar David Friedrich";
      artDetails3.artLocation = @"Alte Nationalgalerie, Staatliche Museen zu Berlin";
-     artDetails3.artImage = @"image.jpg";
+     artDetails3.artImage = @"Caspar_David_Friedrich.jpg";
      
      Artist *artDetails4 = [Artist new];
      artDetails4.artTitle = @"Parade (Diptych)";
      artDetails4.artistName = @"Mequitta Ahuja";
      artDetails4.artLocation = @"Blanton Museum of Art";
-     artDetails4.artImage = @"image.jpg";
+     artDetails4.artImage = @"Mequitta-Ahuja.jpg";
      
      Artist *artDetails5 = [Artist new];
      artDetails5.artTitle = @"The Marchesa Casati";
      artDetails5.artistName = @"Augustus Edwin John";
      artDetails5.artLocation = @"Art Gallery of Ontario";
-     artDetails5.artImage = @"image.jpg";
+     artDetails5.artImage = @"Augustus-Edwin-John.jpg";
      
      Artist *artDetails6 = [Artist new];
      artDetails6.artTitle = @"The Harvest";
      artDetails6.artistName = @"Albert Oehlen";
      artDetails6.artLocation = @"Essl Museum - Contemporary Art";
-     artDetails6.artImage = @"image.jpg";
+     artDetails6.artImage = @"Albert-Oehlen.jpg";
     
      Artist *artDetails7 = [Artist new];
      artDetails7.artTitle = @"The Milkmaid";
      artDetails7.artistName = @"Johannes Vermeer";
      artDetails7.artLocation = @"Rijksmuseum";
-     artDetails7.artImage = @"image.jpg";
+     artDetails7.artImage = @"Johannes-Vermeer.jpg";
      
      Artist *artDetails8 = [Artist new];
      artDetails8.artTitle = @"Abstract Painting (726) ";
      artDetails8.artistName = @"Gerhard Richter";
      artDetails8.artLocation = @"Tate Modern";
-     artDetails8.artImage = @"image.jpg";
+     artDetails8.artImage = @"Gerhard-Richter.jpg";
 
      Artist *artDetails9 = [Artist new];
      artDetails9.artTitle = @"Gum Ball No. 10: “Sugar Daddy”";
      artDetails9.artistName = @"Charles Bell";
      artDetails9.artLocation = @"Solomon R. Guggenheim Museum";
-     artDetails9.artImage = @"image.jpg";
+     artDetails9.artImage = @"Charles-Bell.jpg";
      
      Artist *artDetails10 = [Artist new];
      artDetails10.artTitle = @"Details of Renaissance Paintings (Sandro Botticelli, Birth of Venus, 1482)";
      artDetails10.artistName = @"Andy Warhol";
      artDetails10.artLocation = @"The Andy Warhol Museum";
-     artDetails10.artImage = @"image.jpg";
+     artDetails10.artImage = @"Andy-Warhol.jpg";
 
      Artist *artDetails11 = [Artist new];
      artDetails11.artTitle = @"Apotryptophanae";
      artDetails11.artistName = @"Damien Hirst";
      artDetails11.artLocation = @"British Council";
-     artDetails11.artImage = @"image.jpg";
+     artDetails11.artImage = @"Damien-Hirst.jpg";
      
      Artist *artDetails12 = [Artist new];
      artDetails12.artTitle = @"Sculptures find their location";
      artDetails12.artistName = @"Albert Oehlen";
      artDetails12.artLocation = @"Essl Museum - Contemporary Art";
-     artDetails12.artImage = @"image.jpg";
+     artDetails12.artImage = @"Vincent-Van-Gogh.jpg";
      
      Artist *artDetails13 = [Artist new];
      artDetails13.artTitle = @"Tc86";
      artDetails13.artistName = @"Michael Wolf";
      artDetails13.artLocation = @"Hong Kong Heritage Museum";
-     artDetails13.artImage = @"image.jpg";
+     artDetails13.artImage = @"Mike_Wolf.png";
      
      Artist *artDetails14 = [Artist new];
      artDetails14.artTitle = @"Music, Pink and Blue No. 2";
      artDetails14.artistName = @"Georgia O’Keeffe";
      artDetails14.artLocation = @"Whitney Museum of American Art";
-     artDetails14.artImage = @"image.jpg";
+     artDetails14.artImage = @"o_keeffe.jpg";
      
      Artist *artDetails15 = [Artist new];
      artDetails15.artTitle = @"Untitled (Julia)";
      artDetails15.artistName = @"Anna Malagrida";
      artDetails15.artLocation = @"Fundacion MAPFRE";
-     artDetails15.artImage = @"image.jpg";
+     artDetails15.artImage = @"Anna-Malagrida.jpg";
      
      Artist *artDetails16 = [Artist new];
      artDetails16.artTitle = @"Schiphol";
      artDetails16.artistName = @"Andreas Gursky";
      artDetails16.artLocation = @"The Metropolitan Museum of Art";
-     artDetails16.artImage = @"image.jpg";
+     artDetails16.artImage = @"Andreas-Gursky.jpg";
      
      Artist *artDetails17 = [Artist new];
      artDetails17.artTitle = @"Blue Reflections";
      artDetails17.artistName = @"Kazuo Nakamura";
      artDetails17.artLocation = @"Art Gallery of Ontario";
-     artDetails17.artImage = @"image.jpg";
+     artDetails17.artImage = @"Kazuo-Nakamura1.jpg";
      
      Artist *artDetails18 = [Artist new];
      artDetails18.artTitle = @"Interior with a Picture";
      artDetails18.artistName = @"Patrick Caulfield";
      artDetails18.artLocation = @"Tate";
-     artDetails18.artImage = @"image.jpg";
+     artDetails18.artImage = @"Pat_Caulfield.jpg";
      
-    */
+    artDetails = [NSArray arrayWithObjects:artDetails1, artDetails2, artDetails3, artDetails4, artDetails5, artDetails6, artDetails7, artDetails8, artDetails9, artDetails10, artDetails11, artDetails12, artDetails13, artDetails14, artDetails15, artDetails16, artDetails17, artDetails18, nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -156,20 +158,30 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 20;
+    return [artDetails count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Title"];
+    
+    //I changed the default UITableViewCell class to the one I created (ListOfArtTVCell)
+    //This allows me to create a custom table view cell and lay it out how I'd like (see wireframes)
+    
+    ListOfArtTVCell *cell = (ListOfArtTVCell*)[tableView dequeueReusableCellWithIdentifier:@"Title"];
+    
+   // static NSString *cellIdentifier = @"Cell";
+   // ArtWorkTableViewController *cell = (ArtWorkTableViewController *)[tableView dequeueReusableHeaderFooterViewWithIdentifier:cellIdentifier]
     
     // Configure the cell...ONCE you do this you can define the properties for this cell
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Title"];
+        cell = [[ListOfArtTVCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Title"];
         
-        cell.textLabel.text = @"WYAP";
+        // how do i populate the artDetails array in this tableview?
+        
+        Artist *details = [artDetails objectAtIndex:indexPath.row];
+        cell.textLabel.text = details.artistName;
         cell.backgroundColor = [UIColor colorWithHue:.09 saturation:.99 brightness:.95 alpha:1.0];
-        cell.imageView.image = [UIImage imageNamed:@"launch480x480"];
+        cell.imageView.image = [UIImage imageNamed:details.artImage];
         
         
     

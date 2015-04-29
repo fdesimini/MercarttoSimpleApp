@@ -14,6 +14,6 @@
 @property (strong, nonatomic) NSString *artistName;
 @property (strong, nonatomic) NSString *artImage;
 @property (strong, nonatomic) NSString *artLocation;
-//@property (strong, nonatomic) NSArray *artDetails;
+
 
 @end

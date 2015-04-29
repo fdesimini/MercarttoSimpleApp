@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		397473F01AEF20B900C92489 /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 397473EF1AEF20B900C92489 /* Artist.m */; };
 		39ABE9C81AED62AB00C729F6 /* ArtWorkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */; };
+		39D4F32A1AF1717300ACED30 /* ListOfArtTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D4F3291AF1717300ACED30 /* ListOfArtTVCell.m */; };
 		39EFC1E91AEAC45600C7A5E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1E81AEAC45600C7A5E5 /* main.m */; };
 		39EFC1EC1AEAC45600C7A5E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1EB1AEAC45600C7A5E5 /* AppDelegate.m */; };
 		39EFC1EF1AEAC45600C7A5E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 		397473EF1AEF20B900C92489 /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		39ABE9C61AED62AB00C729F6 /* ArtWorkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtWorkTableViewController.h; sourceTree = "<group>"; };
 		39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtWorkTableViewController.m; sourceTree = "<group>"; };
+		39D4F3281AF1717300ACED30 /* ListOfArtTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListOfArtTVCell.h; sourceTree = "<group>"; };
+		39D4F3291AF1717300ACED30 /* ListOfArtTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListOfArtTVCell.m; sourceTree = "<group>"; };
 		39EFC1E31AEAC45600C7A5E5 /* MercarttoSimpleVersion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercarttoSimpleVersion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39EFC1E71AEAC45600C7A5E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39EFC1E81AEAC45600C7A5E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 		39EFC23E1AEAD7B900C7A5E5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				397473EE1AEF20B900C92489 /* Artist.h */,
+				397473EF1AEF20B900C92489 /* Artist.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -139,8 +144,8 @@
 				39EFC1EE1AEAC45600C7A5E5 /* ViewController.m */,
 				39ABE9C61AED62AB00C729F6 /* ArtWorkTableViewController.h */,
 				39ABE9C71AED62AB00C729F6 /* ArtWorkTableViewController.m */,
-				397473EE1AEF20B900C92489 /* Artist.h */,
-				397473EF1AEF20B900C92489 /* Artist.m */,
+				39D4F3281AF1717300ACED30 /* ListOfArtTVCell.h */,
+				39D4F3291AF1717300ACED30 /* ListOfArtTVCell.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				39EFC1EF1AEAC45600C7A5E5 /* ViewController.m in Sources */,
 				39EFC1EC1AEAC45600C7A5E5 /* AppDelegate.m in Sources */,
 				39EFC1E91AEAC45600C7A5E5 /* main.m in Sources */,
+				39D4F32A1AF1717300ACED30 /* ListOfArtTVCell.m in Sources */,
 				397473F01AEF20B900C92489 /* Artist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
